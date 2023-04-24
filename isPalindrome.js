@@ -3,8 +3,8 @@
 function palindrome(word){
     let backwards = ""
 
-    for (i = word.length - 1; i >= 0; i--){
-        backwards = backwards + word[i]
+    for (i = 0; i != word.length; i++){
+        backwards = word[i] + backwards
     }
 
     if (word === backwards){
